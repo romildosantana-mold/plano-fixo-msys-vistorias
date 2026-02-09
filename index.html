@@ -155,11 +155,23 @@ h2 {
     position: relative;
     background: #ffffff;
     border-radius: 16px;
-    padding: 32px 40px;
+    padding: 36px 40px;
     margin: 0 auto 50px;
     max-width: 1400px;
+
+    display: flex;
+    flex-direction: column;   /* 🔥 empilha logo + texto */
+    align-items: center;      /* 🔥 centraliza tudo */
+    text-align: center;
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    overflow: hidden; /* importante pro degradê */
+    overflow: hidden;
+}
+	.header-box img {
+    max-width: 300px;   /* 🔥 logo maior */
+    width: 100%;
+    height: auto;
+    margin-bottom: 14px;
 }
 
 /* Linha inferior com degradê */
@@ -445,6 +457,7 @@ h2 {
 
 </body>
 </html>
+
 
 
 
