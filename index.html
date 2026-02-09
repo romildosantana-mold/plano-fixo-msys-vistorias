@@ -104,8 +104,12 @@ h2 {
 }
 
 .header-box {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
+	.header-box {
+    border-left: 6px solid #27ae60;
+}
+
 
 	
 .plans {
@@ -126,6 +130,16 @@ h2 {
     justify-content: space-between;
 }
 
+	.plan {
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+	.plan.featured {
+    border: 2px solid #27ae60;
+    transform: scale(1.04);
+}
+
+	
 .plan.enterprise {
     border: 3px solid #27ae60;
     transform: scale(1.03);
@@ -266,6 +280,9 @@ h2 {
         </div>
     </div>
 
+	<div class="plan featured">
+
+	
     <div class="plan">
         <h3>MSYS 10</h3>
         <div class="price">R$ 109 <span>/mês</span></div>
@@ -454,6 +471,7 @@ h2 {
 
 </body>
 </html>
+
 
 
 
