@@ -16,6 +16,15 @@ body {
     margin: auto;
 }
 
+	.plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: auto;
+    align-items: stretch; /* 🔒 mantém todos alinhados */
+}
+
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -142,7 +151,6 @@ h2 {
 	
 .plan.enterprise {
     border: 3px solid #27ae60;
-    transform: scale(1.03);
 }
 
 .plan h3 {
