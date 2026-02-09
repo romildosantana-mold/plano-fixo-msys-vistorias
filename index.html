@@ -49,6 +49,30 @@ h2 {
     letter-spacing: 2px;
 }
 
+	.header-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 26px 34px;
+    margin: 40px auto 60px;
+    max-width: 1100px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.05),
+        0 2px 6px rgba(0,0,0,0.04);
+
+    border: 1px solid #eef1f4;
+}
+
+	@media (max-width: 768px) {
+    .header-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 .plans {
     display: grid;
@@ -176,14 +200,14 @@ h2 {
 
 <body>
 
-	 <div class="header">
-        <img src="logo-msys-vistorias.png" alt="Msys Vistorias">
+	<div class="header-box">
+       <img src="logo-msys-vistorias.png" alt="Msys Vistorias" class="header-logo">
+
         <div class="header-text">
-            <h1>Planos Msys Vistorias</h1>
-            <h2>Valores mensais • Usuários e fotos ilimitados</h2>
-        </div>
-    </div>
-	
+           <h1>Planos Msys Vistorias</h1>
+           <p>Valores mensais • Usuários e fotos ilimitados</p>
+       </div>
+     </div>
 	
 
 <div class="plans">
@@ -396,6 +420,7 @@ h2 {
 
 </body>
 </html>
+
 
 
 
