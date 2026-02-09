@@ -11,6 +11,11 @@ body {
     padding: 40px;
 }
 
+	.plans {
+    max-width: 1400px;
+    margin: auto;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 10px;
@@ -38,14 +43,7 @@ h2 {
     height: auto;         /* mantém proporção */
     object-fit: contain;
 }
-	.header-box {
-    border-radius: 16px;
-}
 
-
-	.header-box img {
-    max-height: 80px;     /* impede estourar verticalmente */
-}
 	
 .header img {
     height: 72px;
@@ -66,46 +64,47 @@ h2 {
 
 .header-box {
     background: #ffffff;
-    border-radius: 14px;
-    padding: 18px 24px;          /* ↓ menos padding */
-    margin: 30px auto 45px;      /* ↓ menos altura total */
-    max-width: 1100px;
+    border-radius: 16px;
+    padding: 28px 40px;          /* header maior */
+    margin: 0 auto 60px;         /* espaçamento inferior */
+    max-width: 1400px;           /* 🔥 igual ao .plans */
 
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 28px;
 
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 768px) {
     .header-box {
-        padding: 16px 18px;
+        padding: 22px 20px;
     }
 
     .header-logo {
-        max-width: 140px;
+        max-width: 160px;
     }
 
     .header-box h1 {
         font-size: 22px;
+        text-align: center;
+    }
+
+    .header-box {
+        flex-direction: column;
+        text-align: center;
     }
 }
+
+
 
 	.header-logo {
     max-width: 160px;   /* antes estava grande */
     height: auto;
 }
 
-	.header-box h1 {
-    font-size: 24px;    /* antes muito grande */
-    margin: 0;
-}
-
-.header-box p {
-    font-size: 15px;
-    margin-top: 4px;
-    color: #6c7a89;
+.header-box {
+    margin-bottom: 40px;
 }
 
 	
@@ -455,6 +454,7 @@ h2 {
 
 </body>
 </html>
+
 
 
 
